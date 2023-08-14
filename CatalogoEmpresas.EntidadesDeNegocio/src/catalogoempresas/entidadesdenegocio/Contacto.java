@@ -5,7 +5,8 @@ import java.util.ArrayList;
 
 
 public class Contacto {
-    private int id;
+     private int id;
+    private String nombre;
     private String email;
     private String telefono;
     private String celular;
@@ -15,8 +16,9 @@ public class Contacto {
     public Contacto() {
     }
 
-    public Contacto(int id, String email, String telefono, String celular, int top_aux, ArrayList<Empresa> empresas) {
+    public Contacto(int id, String nombre, String email, String telefono, String celular, int top_aux, ArrayList<Empresa> empresas) {
         this.id = id;
+        this.nombre = nombre;
         this.email = email;
         this.telefono = telefono;
         this.celular = celular;
@@ -30,6 +32,14 @@ public class Contacto {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getEmail() {
@@ -71,7 +81,6 @@ public class Contacto {
     public void setEmpresas(ArrayList<Empresa> empresas) {
         this.empresas = empresas;
     }
-    
     
     
 }
